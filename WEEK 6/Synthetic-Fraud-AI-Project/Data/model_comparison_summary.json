@@ -1,0 +1,60 @@
+{
+  "baseline": {
+    "precision": 0.9572649572649573,
+    "recall": 0.7567567567567568,
+    "f1": 0.8452830188679246,
+    "auc": 0.9670694156845162
+  },
+  "augmented": {
+    "precision": 0.8299319727891157,
+    "recall": 0.8243243243243243,
+    "f1": 0.8271186440677966,
+    "auc": 0.9691897199385917
+  },
+  "recall_improvement_pp": 6.76,
+  "f1_improvement_pp": -1.82,
+  "real_train_fraud_n": 344,
+  "synthetic_fraud_n": 5000,
+  "test_fraud_n": 148,
+  "n_estimators": 100,
+  "max_depth": 16,
+  "real_train_n": 199364,
+  "real_test_n": 85443,
+  "matched_precision_check": {
+    "baseline_precision": 0.9573,
+    "augmented_recall_at_that_precision": 0.7162,
+    "baseline_recall": 0.7568
+  },
+  "matched_recall_check": {
+    "baseline_recall": 0.7568,
+    "augmented_precision_at_that_recall": 0.9127,
+    "baseline_precision": 0.9573
+  },
+  "average_precision": {
+    "baseline": 0.8221,
+    "augmented": 0.8193
+  },
+  "dataset_totals": {
+    "total_rows": 284807,
+    "total_fraud": 492,
+    "fraud_pct": 0.1727,
+    "duplicates": 1081
+  },
+  "prior_scarcity_experiment": {
+    "description": "Earlier pipeline run using a simulated dataset with severe fraud scarcity (80 real fraud rows in training, vs 344 here)",
+    "baseline": {
+      "precision": 1.0,
+      "recall": 0.2059,
+      "f1": 0.3415,
+      "auc": 0.9026
+    },
+    "augmented": {
+      "precision": 0.449,
+      "recall": 0.6471,
+      "f1": 0.5301,
+      "auc": 0.9854
+    },
+    "recall_improvement_pp": 44.12,
+    "f1_improvement_pp": 18.87
+  }
+}

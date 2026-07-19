@@ -1,0 +1,11 @@
+EDA SUMMARY
+Total transactions: 284,807
+Features: 30 (Time, V1-V28, Amount)
+Fraud cases: 492 (0.1727%)
+Non-fraud cases: 284,315
+Imbalance ratio: 1:577
+Missing values: 0
+Duplicate rows: 1081
+Key insight: Fraud transactions show distinct clustering in PCA space and
+skew toward either very small ("card-testing") or unusually large amounts
+compared to typical non-fraud transactions.
