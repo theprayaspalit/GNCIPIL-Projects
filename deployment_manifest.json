@@ -1,0 +1,125 @@
+{
+  "dataset": {
+    "totalRows": 284807,
+    "totalFraud": 492,
+    "totalNonFraud": 284315,
+    "trainRows": 199364,
+    "trainFraud": 344,
+    "testRows": 85443,
+    "testFraud": 148,
+    "syntheticRows": 5000
+  },
+  "models": [
+    {
+      "id": "baseline_tuned",
+      "title": "Baseline-tuned",
+      "subtitle": "Real training data only",
+      "description": "Random Forest trained on the 199,364 real training rows.",
+      "threshold": 0.5,
+      "trainingRows": 199364,
+      "trainingFraud": 344,
+      "syntheticRows": 0,
+      "metrics": {
+        "accuracy": 0.9995201479348805,
+        "precision": 0.9572649572649573,
+        "recall": 0.7567567567567568,
+        "f1": 0.8452830188679246,
+        "roc_auc": 0.9670710000110904,
+        "average_precision": 0.82211800257156,
+        "tn": 85290,
+        "fp": 5,
+        "fn": 36,
+        "tp": 112,
+        "correct": 85402,
+        "wrong": 41
+      },
+      "validation": {
+        "browser_decisions_match_sklearn_exactly": true,
+        "decision_rule_used_by_demo": "fraud_probability > threshold",
+        "onnx_outputs": [
+          "label",
+          "probabilities"
+        ],
+        "onnx_output_used_by_demo": "probabilities",
+        "onnx_label_output_used_by_demo": false,
+        "max_probability_delta": 3.886222839089015e-07,
+        "rows_validated": 85443
+      }
+    },
+    {
+      "id": "gaussian_copula_augmented",
+      "title": "Gaussian-Copula augmented",
+      "subtitle": "Real data plus generated fraud rows",
+      "description": "Random Forest trained on real training data plus 5,000 generated fraud rows.",
+      "threshold": 0.5,
+      "trainingRows": 204364,
+      "trainingFraud": 5344,
+      "syntheticRows": 5000,
+      "metrics": {
+        "accuracy": 0.9994148145547324,
+        "precision": 0.8356164383561644,
+        "recall": 0.8243243243243243,
+        "f1": 0.8299319727891157,
+        "roc_auc": 0.9699289271098872,
+        "average_precision": 0.819250700902379,
+        "tn": 85271,
+        "fp": 24,
+        "fn": 26,
+        "tp": 122,
+        "correct": 85393,
+        "wrong": 50
+      },
+      "validation": {
+        "browser_decisions_match_sklearn_exactly": true,
+        "decision_rule_used_by_demo": "fraud_probability > threshold",
+        "onnx_outputs": [
+          "label",
+          "probabilities"
+        ],
+        "onnx_output_used_by_demo": "probabilities",
+        "onnx_label_output_used_by_demo": false,
+        "max_probability_delta": 3.981590270818458e-07,
+        "rows_validated": 85443
+      }
+    },
+    {
+      "id": "smote_augmented",
+      "title": "SMOTE augmented",
+      "subtitle": "Real data plus SMOTE fraud rows",
+      "description": "Random Forest trained after SMOTE increases fraud examples to match the Gaussian augmented count.",
+      "threshold": 0.5,
+      "trainingRows": 204364,
+      "trainingFraud": 5344,
+      "syntheticRows": 5000,
+      "metrics": {
+        "accuracy": 0.9995669627705019,
+        "precision": 0.944,
+        "recall": 0.7972972972972973,
+        "f1": 0.8644688644688645,
+        "roc_auc": 0.9743274929774725,
+        "average_precision": 0.8343932610837377,
+        "tn": 85288,
+        "fp": 7,
+        "fn": 30,
+        "tp": 118,
+        "correct": 85406,
+        "wrong": 37
+      },
+      "validation": {
+        "browser_decisions_match_sklearn_exactly": true,
+        "decision_rule_used_by_demo": "fraud_probability > threshold",
+        "onnx_outputs": [
+          "label",
+          "probabilities"
+        ],
+        "onnx_output_used_by_demo": "probabilities",
+        "onnx_label_output_used_by_demo": false,
+        "max_probability_delta": 3.981590270818458e-07,
+        "rows_validated": 85443
+      }
+    }
+  ],
+  "sample_count": 434,
+  "prepared_sample_count": 6,
+  "full_random_pool_count": 85443
+}

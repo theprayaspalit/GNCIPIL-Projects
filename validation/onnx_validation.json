@@ -1,0 +1,38 @@
+{
+  "baseline_tuned": {
+    "browser_decisions_match_sklearn_exactly": true,
+    "decision_rule_used_by_demo": "fraud_probability > threshold",
+    "onnx_outputs": [
+      "label",
+      "probabilities"
+    ],
+    "onnx_output_used_by_demo": "probabilities",
+    "onnx_label_output_used_by_demo": false,
+    "max_probability_delta": 3.886222839089015e-07,
+    "rows_validated": 85443
+  },
+  "gaussian_copula_augmented": {
+    "browser_decisions_match_sklearn_exactly": true,
+    "decision_rule_used_by_demo": "fraud_probability > threshold",
+    "onnx_outputs": [
+      "label",
+      "probabilities"
+    ],
+    "onnx_output_used_by_demo": "probabilities",
+    "onnx_label_output_used_by_demo": false,
+    "max_probability_delta": 3.981590270818458e-07,
+    "rows_validated": 85443
+  },
+  "smote_augmented": {
+    "browser_decisions_match_sklearn_exactly": true,
+    "decision_rule_used_by_demo": "fraud_probability > threshold",
+    "onnx_outputs": [
+      "label",
+      "probabilities"
+    ],
+    "onnx_output_used_by_demo": "probabilities",
+    "onnx_label_output_used_by_demo": false,
+    "max_probability_delta": 3.981590270818458e-07,
+    "rows_validated": 85443
+  }
+}
