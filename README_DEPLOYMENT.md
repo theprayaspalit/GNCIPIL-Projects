@@ -8,7 +8,7 @@ This folder contains a light-theme browser demo for the synthetic fraud detectio
 - `models/*.onnx` are the exported browser models.
 - `data/heldout_test_samples.json` contains real held-out test rows used by the demo.
 - `data/prepared_demo_samples.json` contains the curated fraud/non-fraud examples shown as separate cards.
-- `data/all_heldout_test_rows.json` contains all 85,443 held-out rows used by the random buttons.
+- `data/random_rows_manifest.json`, `data/random_chunks/*.json`, and `data/random_fraud_rows.json` power fast random loading across all held-out rows.
 - `validation/onnx_validation.json` proves the ONNX threshold predictions match sklearn on the full held-out test set.
 - `build_deployment.py` rebuilds the deployment package.
 

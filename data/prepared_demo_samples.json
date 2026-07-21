@@ -106,11 +106,11 @@
         "prediction": 0
       },
       "gaussian_copula_augmented": {
-        "fraud_probability": 0.0008130488181711305,
+        "fraud_probability": 0.0008130488181711307,
         "prediction": 0
       },
       "smote_augmented": {
-        "fraud_probability": 5.3389337969211475e-05,
+        "fraud_probability": 5.338933796921149e-05,
         "prediction": 0
       }
     }
@@ -164,11 +164,11 @@
         "prediction": 0
       },
       "gaussian_copula_augmented": {
-        "fraud_probability": 0.008790347746836971,
+        "fraud_probability": 0.00879034774683697,
         "prediction": 0
       },
       "smote_augmented": {
-        "fraud_probability": 0.6635138031901019,
+        "fraud_probability": 0.6635138031901018,
         "prediction": 1
       }
     }
@@ -284,7 +284,7 @@
         "prediction": 0
       },
       "smote_augmented": {
-        "fraud_probability": 0.3753083945897646,
+        "fraud_probability": 0.37530839458976467,
         "prediction": 0
       }
     }
