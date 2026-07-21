@@ -1,0 +1,13 @@
+{
+  "name": "synthetic-fraud-ai-project",
+  "version": "1.0.0",
+  "description": "**Domain:** Finance | **Project type:** Data Generation & Augmentation using Generative AI **Final Project — Six-Week AI-ML Internship (GNCIPL)**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
