@@ -1,0 +1,350 @@
+[
+  {
+    "id": "clear-fraud",
+    "title": "Clear fraud",
+    "description": "A real fraud transaction that every model flags as fraud.",
+    "hint": "Use this when you want the demo to show a clean fraud detection.",
+    "tone": "fraud",
+    "sample_id": 106,
+    "source_index": 42696,
+    "true_label": 1,
+    "amount": 88.23,
+    "time": 41203.0,
+    "features": [
+      41203.0,
+      -8.426814,
+      6.241659,
+      -9.94647,
+      8.199614,
+      -8.213093,
+      -2.522046,
+      -11.643028,
+      5.3395,
+      -7.051016,
+      -12.265324,
+      7.047733,
+      -13.742953,
+      0.821627,
+      -14.107464,
+      1.020471,
+      -11.847887,
+      -21.673987,
+      -7.784042,
+      3.204309,
+      0.563869,
+      2.42746,
+      0.692667,
+      0.020305,
+      0.499809,
+      0.467594,
+      0.483162,
+      1.195671,
+      0.198294,
+      88.23
+    ],
+    "precomputed": {
+      "baseline_tuned": {
+        "fraud_probability": 1.0,
+        "prediction": 1
+      },
+      "gaussian_copula_augmented": {
+        "fraud_probability": 1.0,
+        "prediction": 1
+      },
+      "smote_augmented": {
+        "fraud_probability": 1.0,
+        "prediction": 1
+      }
+    }
+  },
+  {
+    "id": "clear-normal",
+    "title": "Clear non-fraud",
+    "description": "A real normal transaction that every model keeps as non-fraud.",
+    "hint": "Use this to show what a safe-looking transaction result looks like.",
+    "tone": "normal",
+    "sample_id": 217,
+    "source_index": 226585,
+    "true_label": 0,
+    "amount": 1.29,
+    "time": 144704.0,
+    "features": [
+      144704.0,
+      2.012832,
+      -0.193575,
+      -1.032045,
+      0.334958,
+      -0.250209,
+      -0.974458,
+      -0.007646,
+      -0.117794,
+      0.477946,
+      0.281525,
+      0.812924,
+      0.446993,
+      -1.373958,
+      0.743549,
+      -0.520644,
+      0.12668,
+      -0.428547,
+      -0.240754,
+      0.4097,
+      -0.303035,
+      -0.247115,
+      -0.678679,
+      0.355789,
+      0.040832,
+      -0.385985,
+      0.177227,
+      -0.083073,
+      -0.072129,
+      1.29
+    ],
+    "precomputed": {
+      "baseline_tuned": {
+        "fraud_probability": 3.103424698210136e-05,
+        "prediction": 0
+      },
+      "gaussian_copula_augmented": {
+        "fraud_probability": 0.0008130488181711307,
+        "prediction": 0
+      },
+      "smote_augmented": {
+        "fraud_probability": 5.338933796921149e-05,
+        "prediction": 0
+      }
+    }
+  },
+  {
+    "id": "augmentation-helps",
+    "title": "Synthetic model catches this",
+    "description": "Baseline misses this fraud, but at least one synthetic-data model catches it.",
+    "hint": "Use this to explain why augmentation can improve recall.",
+    "tone": "fraud",
+    "sample_id": 214,
+    "source_index": 93788,
+    "true_label": 1,
+    "amount": 0.0,
+    "time": 64585.0,
+    "features": [
+      64585.0,
+      1.080433,
+      0.962831,
+      -0.278065,
+      2.743318,
+      0.412364,
+      -0.320778,
+      0.04129,
+      0.17617,
+      -0.966952,
+      -0.19412,
+      2.140057,
+      -0.276309,
+      -1.191306,
+      -1.880275,
+      0.398272,
+      1.367433,
+      1.522662,
+      1.026317,
+      -1.57707,
+      -0.172659,
+      -0.008996,
+      -0.057036,
+      -0.053692,
+      -0.026373,
+      0.4003,
+      0.072828,
+      0.027043,
+      0.063238,
+      0.0
+    ],
+    "precomputed": {
+      "baseline_tuned": {
+        "fraud_probability": 0.0638781101620654,
+        "prediction": 0
+      },
+      "gaussian_copula_augmented": {
+        "fraud_probability": 0.00879034774683697,
+        "prediction": 0
+      },
+      "smote_augmented": {
+        "fraud_probability": 0.6635138031901018,
+        "prediction": 1
+      }
+    }
+  },
+  {
+    "id": "false-alert",
+    "title": "False-alert example",
+    "description": "A real non-fraud transaction that at least one model incorrectly flags.",
+    "hint": "Use this to show why precision and false alerts matter.",
+    "tone": "challenge",
+    "sample_id": 418,
+    "source_index": 16110,
+    "true_label": 0,
+    "amount": 1.0,
+    "time": 27524.0,
+    "features": [
+      27524.0,
+      -26.619952,
+      14.845545,
+      -27.747084,
+      6.408105,
+      -19.025741,
+      -5.053209,
+      -19.04196,
+      17.573712,
+      -3.695863,
+      -8.098048,
+      4.524322,
+      -6.3148,
+      0.983251,
+      -6.052126,
+      -0.09991,
+      -5.772456,
+      -11.88196,
+      -4.744603,
+      0.809988,
+      1.840055,
+      1.853209,
+      -1.985567,
+      -1.210123,
+      0.150261,
+      1.879262,
+      -0.225019,
+      1.25738,
+      0.451777,
+      1.0
+    ],
+    "precomputed": {
+      "baseline_tuned": {
+        "fraud_probability": 0.96,
+        "prediction": 1
+      },
+      "gaussian_copula_augmented": {
+        "fraud_probability": 0.9692857142857143,
+        "prediction": 1
+      },
+      "smote_augmented": {
+        "fraud_probability": 0.99,
+        "prediction": 1
+      }
+    }
+  },
+  {
+    "id": "missed-fraud",
+    "title": "Missed fraud",
+    "description": "A real fraud transaction that all models classify as non-fraud.",
+    "hint": "Use this to explain that even high-accuracy fraud models are not perfect.",
+    "tone": "challenge",
+    "sample_id": 11,
+    "source_index": 182992,
+    "true_label": 1,
+    "amount": 3.22,
+    "time": 125612.0,
+    "features": [
+      125612.0,
+      1.889618,
+      1.073099,
+      -1.678018,
+      4.173268,
+      1.015516,
+      -0.009389,
+      -0.079706,
+      0.064071,
+      -0.714517,
+      0.042228,
+      -0.408403,
+      -0.92937,
+      0.058686,
+      -3.512845,
+      -0.164613,
+      2.069853,
+      1.733382,
+      1.580758,
+      -2.335185,
+      -0.15357,
+      0.203728,
+      0.733796,
+      -0.03656,
+      0.334306,
+      0.147171,
+      0.279556,
+      0.031669,
+      0.035883,
+      3.22
+    ],
+    "precomputed": {
+      "baseline_tuned": {
+        "fraud_probability": 0.03925249108305171,
+        "prediction": 0
+      },
+      "gaussian_copula_augmented": {
+        "fraud_probability": 0.09426535149127392,
+        "prediction": 0
+      },
+      "smote_augmented": {
+        "fraud_probability": 0.37530839458976467,
+        "prediction": 0
+      }
+    }
+  },
+  {
+    "id": "borderline-normal",
+    "title": "Borderline normal",
+    "description": "A non-fraud transaction with some fraud-like signal, still kept normal.",
+    "hint": "Use this to show how probabilities can rise without crossing the fraud threshold.",
+    "tone": "normal",
+    "sample_id": 305,
+    "source_index": 8931,
+    "true_label": 0,
+    "amount": 0.76,
+    "time": 12272.0,
+    "features": [
+      12272.0,
+      -0.74806,
+      1.268308,
+      1.87813,
+      3.042647,
+      0.015121,
+      0.919211,
+      -0.336028,
+      0.510162,
+      1.196168,
+      -0.714457,
+      1.827728,
+      -3.338379,
+      -1.086338,
+      -0.873366,
+      -2.077609,
+      0.249557,
+      2.884032,
+      1.427631,
+      -0.395929,
+      -0.237785,
+      -0.032101,
+      0.326786,
+      -0.168693,
+      -0.039789,
+      -0.443971,
+      0.176624,
+      -0.080795,
+      0.172272,
+      0.76
+    ],
+    "precomputed": {
+      "baseline_tuned": {
+        "fraud_probability": 0.03297585378340392,
+        "prediction": 0
+      },
+      "gaussian_copula_augmented": {
+        "fraud_probability": 0.03851041396269453,
+        "prediction": 0
+      },
+      "smote_augmented": {
+        "fraud_probability": 0.13945041645206946,
+        "prediction": 0
+      }
+    }
+  }
+]
